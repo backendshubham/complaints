@@ -1,0 +1,84 @@
+.body {
+    background-color: #222;
+    color: yellow;
+    height: 100vh;
+    overflow: auto;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.complaint-cell {
+    /* Increased width for the "Complaint" column */
+    min-width: 300px;
+}
+
+.custom-theme {
+    background-color: #393939 !important;
+}
+
+.custom-theme th {
+    background-color: #292929 !important;
+    color: #FFF !important;
+}
+
+.custom-theme td,
+.custom-theme tbody tr:nth-child(even) {
+    background-color: #333 !important;
+    color: #FFF !important;
+}
+
+.table-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 0.2s ease-out both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table td,
+.table th {
+    padding: 20px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.table.rounded {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #393939;
+    color: #FFF;
+}
+
+.input-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #292929;
+    color: #FFF;
+    cursor: pointer;
+}
